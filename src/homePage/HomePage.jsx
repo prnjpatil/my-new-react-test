@@ -25,7 +25,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>This is Home Page</h1>
+      <p className="text-with-border">This is Home Page</p>
       <div>
         <Link to="/counterPage"> Click Here to go counter Page </Link>
       </div>
