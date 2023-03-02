@@ -1,11 +1,13 @@
+import "./Card.css";
+
 const Card = ({title , description , thumbnail}) => {
 
     return(
         <div className="card">
             <img src={thumbnail} alt={title} />
-            <div className="card-main">
-                <h3>{title}</h3>
-                <p>{description}</p>
+            <div className="card-body">
+                <p className="card-title">{title}</p>
+                <p className="card-desc">{description}</p>
             </div>
         </div>
     )

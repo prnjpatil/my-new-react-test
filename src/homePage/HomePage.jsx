@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Card from "./Card";
+import "./HomePage.css";
 
 const URL = "https://dummyjson.com/products";
 
@@ -28,6 +29,7 @@ const HomePage = () => {
       <div>
         <Link to="/counterPage"> Click Here to go counter Page </Link>
       </div>
+      <div className="card-conatiner">
       {cards.map((card) => (
         <Card
           title={card.title}
@@ -36,6 +38,7 @@ const HomePage = () => {
           key={card.id}
         />
       ))}
+      </div>
     </div>
   );
 };
